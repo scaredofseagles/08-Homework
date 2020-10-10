@@ -1,0 +1,105 @@
+/*
+Colour Scheme:
+
+#00cc99
+#737373
+#333333
+#ff9966
+*/
+html {
+    font-family: 'Poppins', sans-serif;
+}
+.topnav{
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #737373;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #00cc99;
+    color: white;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.container{
+    margin: 0px !important;
+    padding: 0px;
+}
+.welcomeCard{
+    position: relative;
+    text-align: center;
+
+}
+
+#welcomeText{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#welcomeText h1, #welcomeText h2{
+    font-size: 3.38em;
+}
+
+#welcomeImg{
+    width: 100vw;
+}
+
+#welcomeIcon{
+    position: absolute;
+    left: 55%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+#aboutMeCard{
+    margin: 25px ;
+    ;
+}
+.row {
+    padding-top: 5%;
+}
+
+#profilePic{
+    margin:auto;
+    height: 250px;
+    width: 250px;
+    padding-right: 20px;
+}
+
+.card {
+    margin: auto;
+}
+
+/* #image {
+    height: 350px;
+} */
+
+footer {
+    background:#333;
+    position: fixed;
+    bottom:0;
+    left:0;
+    color:white;
+    text-align: center;
+    width: 100%;
+    /* line-height: 3; */
+}
