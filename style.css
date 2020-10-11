@@ -37,7 +37,7 @@ body {
     background-color: gainsboro;
 }
 
-.container{
+.container-fluid{
     margin: 0px !important;
     padding: 0px;
 }
@@ -92,6 +92,42 @@ body {
 /* #image {
     height: 350px;
 } */
+
+
+
+.portfolioCards{
+    display: grid; 
+    grid-template-columns: repeat(2, auto); 
+    gap: 5px; 
+    justify-content: center;
+} 
+
+.card{
+    margin: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.alert{
+text-align: center;
+}
+
+.btn{
+    background-color: #00cc99;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #005c45;
+    color: white;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #a6a6a6;
+    border-radius: 5px;
+}
 
 footer {
     background:#333;
