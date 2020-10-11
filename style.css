@@ -51,7 +51,7 @@ body {
     color: white;
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -65,7 +65,7 @@ body {
 
 #welcomeIcon{
     position: absolute;
-    left: 55%;
+    left: 50%;
     bottom: 10%;
     transform: translate(-50%, -50%);
     color: white;
@@ -88,12 +88,6 @@ body {
 .card {
     margin: auto;
 }
-
-/* #image {
-    height: 350px;
-} */
-
-
 
 .portfolioCards{
     display: grid; 
@@ -128,7 +122,9 @@ text-align: center;
     box-shadow: 5px 5px 5px 5px #a6a6a6;
     border-radius: 5px;
 }
-
+.hide{
+    display: none
+}
 footer {
     background:#333;
     position: fixed;

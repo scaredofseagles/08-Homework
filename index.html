@@ -19,11 +19,11 @@
     <main class="container-fluid">
         <section class="welcomeCard">
             <img id="welcomeImg" src="https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg" alt="sunset pixelated">
-            <div class="hide" id="welcomeText">
+            <div id="welcomeText">
                 <h1><b>Dailey Kaze</b></h1>
                 <h2 style="font-size: 3em;">Full Stack Developer</h2>
             </div>
-            <div id="welcomeIcon" class="hide"><i class="fas fa-angle-double-down fa-3x"></i></div>
+            <div id="welcomeIcon" class="hide"><i class="fas fa-angle-double-down fa-5x"></i></div>
         </section>
 
         <section id="aboutMeCard">
@@ -38,8 +38,13 @@
                         Hi! My Name is Dailey Kaze
                     </h5>
                     <p>
-                        Full Stack Web Developer with 2+ years of customer service experience to add a more user-friendly experience on the web. Working towards a certificate in full stack development from the University of Toronto, with newly developed skills in JavaScript, CSS, Node.js, and responsive web design. Known as a great communicator and a team player motivated to help the team reach their goal whilst keeping a positive and enriching environment. Positioned to provide unique perspectives with user experience and people management in a fast-paced, quality-driven team to build cutting-edge web applications and software platforms.
+                        Full Stack Web Developer with 2+ years of customer service experience to add a more user-friendly experience on the web. Working towards a certificate in full stack development from the University of Toronto, with newly developed skills in JavaScript, CSS, Node.js, and responsive web design.
                     </p>
+                        
+                    <p>
+                        Known as a great communicator and a team player motivated to help the team reach their goal whilst keeping a positive and enriching environment. Positioned to provide unique perspectives with user experience and people management in a fast-paced, quality-driven team to build cutting-edge web applications and software platforms.
+                    </p>
+                    <p>Would like to know more about me? Find more info in my <a href="#" target="_blank">resume.</a></p>
                 </div>
             </div>
         
@@ -67,5 +72,36 @@
             Copyright © | Dailey Kaze 2020 | All Rights Reserved
         </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/JavaScript">
+
+        let timer = 3
+
+        function countDown(){
+            const timerInterval = setInterval(() => {
+                timer--;
+                if (timer == 0) {
+
+                    arrowDown()
+                }
+            }, 1000);
+        }
+
+        function arrowDown(){
+            $('#welcomeIcon').removeClass('hide')
+            $('#welcomeIcon').animate({
+                bottom: "-=20",
+                height: "swing"
+                }, 1000, function(){
+                    $('#welcomeIcon').animate({
+                    bottom: "+=20",
+                    height: "swing"
+                    }, 1000)
+                } 
+            );
+        }
+        
+        countDown()
+    </script>
 </body>
 </html>
