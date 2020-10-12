@@ -9,6 +9,9 @@ A personal website with a portfolio of projects with social media links and an a
 * HTML
 * CSS
 * Bootstrap 4
+* FontAwesome
+* JavaScript
+* jQuery
 
 ## Goal of the Project
 
@@ -57,7 +60,7 @@ Links are all working and valid
 
 ## URL
 
-See the web application [here](https://scaredofseagles.github.io/02-Homework/)
+See the web application [here](https://scaredofseagles.github.io/Updated-Portfolio/)
 
 ## License
 
