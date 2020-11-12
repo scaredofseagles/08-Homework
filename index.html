@@ -4,104 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dailey Kaze</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./style.css"></link>
     <script src="https://kit.fontawesome.com/4290940806.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/favicon/site.webmanifest">
 </head>
 <body>
-    <header class="topnav">
-        <a><i class="fas fa-code" style="color: white;"></i></a>
-        <a class="active" href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </header>
-    <main class="container-fluid">
-        <section class="welcomeCard">
-            <img id="welcomeImg" src="https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg" alt="sunset pixelated">
-            <div id="welcomeText">
-                <h1><b>Dailey Kaze</b></h1>
-                <h2 style="font-size: 3em;">Full Stack Developer</h2>
-            </div>
-            <div id="welcomeIcon" class="hide"><i class="fas fa-angle-double-down fa-5x"></i></div>
+    <!-- Navbar -->
+	<nav>
+		<ul class="nav">
+			<li class="nav-item"><a href="#">Home</a></li>
+			<li class="nav-item"><a href="#projects">Projects</a></li>
+			<li class="nav-item"><a href="#contact">Contact</a></li>
+			<li class="nav-item"><a href="aboutme.html">About Me</a></li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">
+		<!-- Banner -->
+		<section id="banner" class="card">
+			<span>
+				<img class="bannerImg img-fluid" src="" alt="">
+			</span>
+			<header class="card-img-overlay" id="bannerHeader">
+				<h1 class="card-title">Hi, My Name is Dailey!</h1>
+                <p class="card-text" id="bannerInfo">Full Stack Developer</p>
+                <a class="btn btn-lg btn-outline-warning" type="button" href="Assets/CV - Dailey Kaze.pdf" target="_blank">See Resume</a>
+			</header>
+		</section>
+		<div class="separator"></div>
+		<section id="languageCard">
+			<h2>Main Languages</h2>
+			<div class="languageCard" style="width: 100vh">
+				<i class="languageIcon fab fa-7x fa-html5"></i>
+				<i class="languageIcon fab fa-7x fa-css3-alt"></i>
+				<i class="languageIcon fab fa-7x fa-js-square"></i>
+				<i class="languageIcon fab fa-7x fa-node-js"></i>
+				<i class="languageIcon fas fa-7x fa-database"></i>
+				<i class="languageIcon fab fa-7x fa-react"></i>
+			</div>
+			<div class="groupBtn">
+				<button class="btn btn-lg btn-block btn-info"><i class="fab fa-github"></i> View More on GiHub</button>
+			</div>
+		</section>
+		
+		<div class="separator"></div>
+		
+		<section id="projects" class="row">
+
+            <h2>Featured Projects</h2>
+			
+			<article id="cardOne" class="card col-xl-6">
+				<img src="Assets/Images/fandomz-screenshot.png" class="img-fluid projectImg" alt="">
+				<header class="card-img-overlay projectCard">
+					<h3 class="card-title">Fandomzz</h3>
+					<p class="projectText card-text">An e-commerce website for purchasing and selling fan merchandise using full stack web technologies.</p>
+					<button class="deployedBtn btn btn-outline-secondary">See it Deployed</button>
+					<button class="repoBtn btn btn-outline-secondary">See the Repo</button>
+				</header>
+			</article>
+			
+			<article id="cardTwo" class="card col-xl-6">
+				<img src="Assets/Images/notespn-screenshot.png" class="img-fluid projectImg" alt="">
+				<header class="card-img-overlay projectCard">
+					<h3 class="card-title">NotESPN</h3>
+					<p class="projectText card-text">A web application for sports enthusiasts to view up to date player information and statistics.</p>
+					<button class="deployedBtn btn btn-outline-secondary">See it Deployed</button>
+					<button class="repoBtn btn btn-outline-secondary">See the Repo</button>
+				</header>
+			</article>
+			
+			<article id="cardThree" class="card col-xl-6">
+				<img src="Assets/Images/burger-screenshot.png" class="img-fluid projectImg" alt="">
+				<header class="card-img-overlay projectCard">
+					<h3 class="card-title">Eat Da Burger</h3>
+					<p class="projectText card-text">A web application that takes a burger from the user, then adds the burger to a waiting room waiting to be devoured. </p>
+					<button class="deployedBtn btn btn-outline-secondary">See it Deployed</button>
+					<button class="repoBtn btn btn-outline-secondary">See the Repo</button>
+				</header>
+			</article>
+			
+			<article id="cardFour" class="card col-xl-6">
+				<img src="Assets/Images/employee-manager.png" class="img-fluid projectImg" alt="">
+				<header class="card-img-overlay projectCard">
+					<h3 class="card-title">Employee Manager</h3>
+					<p class="projectText card-text">A CLI application that manages employee, role, and departmental information and logs it to a database to save for future use.</p>
+					<button class="deployedBtn btn btn-outline-secondary">See it Deployed</button>
+					<button class="repoBtn btn btn-outline-secondary">See the Repo</button>
+				</header>
+			</article>
+			
         </section>
-
-        <section id="aboutMeCard">
-            <div class="row">
-            
-                <div class="col col-md-4" style="justify-content: center;">
-                    <img id="profilePic" src="Assets/Images/temp_pic.png" alt="Profile picture">
-                </div>
-                <div class="col col-md-6" style="padding-left: 50px; padding-right: 0px;">
-                    <h2>About Me</h2>
-                    <h5>
-                        Hi! My Name is Dailey Kaze
-                    </h5>
-                    <p>
-                        Full Stack Web Developer with 2+ years of customer service experience to add a more user-friendly experience on the web. Working towards a certificate in full stack development from the University of Toronto, with newly developed skills in JavaScript, CSS, Node.js, and responsive web design.
-                    </p>
-                        
-                    <p>
-                        Known as a great communicator and a team player motivated to help the team reach their goal whilst keeping a positive and enriching environment. Positioned to provide unique perspectives with user experience and people management in a fast-paced, quality-driven team to build cutting-edge web applications and software platforms.
-                    </p>
-                    <p>Would like to know more about me? Find more info in my <a href="Assets/CV - Dailey Kaze.pdf" target="_blank">resume.</a></p>
-                </div>
-            </div>
         
-            <div class="row">
-                
-                <div class="col">
-                    <h2>Follow Me!</h2>
-                    <ul style="list-style-type: none;">
-                        <li><i class="fab fa-twitter"></i><a href="https://twitter.com/dailkaze" target="_blank"> Twitter</a></li>
-                        <li><i class="fab fa-github"></i><a href="https://github.com/scaredofseagles" target="_blank"> GitHub</a></li>
-                        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/daileykaze/" target="_blank"> Linkedin</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </section>
-        
-    </main>
-
-    <br>
-    
-
-    <footer>
-        <p>
-            Copyright © | Dailey Kaze 2020 | All Rights Reserved
-        </p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/JavaScript">
-
-        let timer = 3
-
-        function countDown(){
-            const timerInterval = setInterval(() => {
-                timer--;
-                if (timer == 0) {
-
-                    arrowDown()
-                }
-            }, 1000);
-        }
-
-        function arrowDown(){
-            $('#welcomeIcon').removeClass('hide')
-            $('#welcomeIcon').animate({
-                bottom: "-=20",
-                height: "swing"
-                }, 1000, function(){
-                    $('#welcomeIcon').animate({
-                    bottom: "+=20",
-                    height: "swing"
-                    }, 1000)
-                } 
-            );
-        }
-        
-        countDown()
-    </script>
+        <div class="separator"></div>
+		
+		<section id="contact">
+			<div class="row">
+				<aside class="col col-xl-8">
+					<form class="row g-3">
+						<div class="col-md-6">
+							<label class="form-label" >Name</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label class="form-label">Email</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-md">
+							<label class="form-label">Message</label>
+							<textarea class="form-control" class="form-control" rows="6"></textarea>
+						</div>
+						<div class="btn-group">
+							<ul class="btn-group">
+								<li>
+									<a type="submit" class="primary btn btn-lg btn-primary">Send Message</a>
+								</li>
+								<li>
+									<a type="reset" class="btn btn-lg btn-danger">Clear</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</aside>
+				<aside class="col col-xl-3" id="contactMethod">
+					<article class="row">
+						<div class="contact-method">
+							<h3><i class="fas fa-envelope"></i>  Email</h3>
+							<a href="#">daileykaze@gmail.com</a>
+						</div>
+					</article>
+					<article class="row">
+						<div class="contact-method">
+							<h3><i class="fa fa-phone-alt"></i>  Phone Number</h3>
+							<span>(647) 237-7720</span>
+						</div>
+					</article>
+					<article class="row">
+						<div class="contact-method">
+							<h3>Follow Me!</h3>
+							<ul class="socialIcons">
+								<li>
+									<a href="https://twitter.com/dailkaze" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+								</li>
+								<li>
+                                    <a href="https://github.com/scaredofseagles" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                                </li>
+								<li>
+                                    <a href="https://www.linkedin.com/in/daileykaze/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+                                </li>
+							</ul>
+						</div>
+					</article>
+				</aside>
+			</div>
+		</section>
+				
+		<footer>
+			<ul class="footer">
+				<li>Copyright © Dailey Kaze | All Rights Reserved</li>
+				<li>Icons: FontAwesome & BootStrap</li>
+			</ul>
+		</footer>
+	</div>
 </body>
 </html>
