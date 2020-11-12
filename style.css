@@ -113,8 +113,8 @@ h6 {
 
 #bannerHeader{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #bannerInfo{
@@ -192,6 +192,7 @@ h6 {
 
 .img-fluid{
     object-fit: contain;
+    background-size: contain;
 }
 
 /* .col-xl-6:hover{
@@ -228,6 +229,7 @@ h6 {
 
 .projectText {
     font-size: 12pt;
+    object-fit: fill;
 }
 
 .contact-method{
